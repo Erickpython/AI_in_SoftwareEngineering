@@ -10,8 +10,8 @@ driver = webdriver.Chrome()
 driver.get("https://academy.powerlearnprojectafrica.org/login")
 
 # valid credentials
-username = "aguerowaza@gmail.com"
-password = "Erick@#20"
+username = "example@gmail.com"
+password = "Password123"
 
 driver.find_element(By.ID, "email").send_keys(username)
 driver.find_element(By.ID, "password").send_keys(password)
@@ -28,4 +28,4 @@ except:
 finally:
     driver.quit()  # close the browser  
 
-    
+
